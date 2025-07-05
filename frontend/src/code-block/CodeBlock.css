@@ -1,0 +1,119 @@
+.prompt-editor-box {
+    height: 100%;
+    border: none;
+    cursor: text;
+    padding: 8px;
+    /* borderRadius: 4px; */
+    font-family: Verdana;
+    overflow-y: auto
+}
+
+.prompt-editor-box > p {
+    margin: 0;
+}
+.prompt-editor-prompt {
+    cursor: text;
+    color: rgb(204, 204, 204);
+    pointer-events: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-family: Verdana;
+}
+
+.description-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.output-view {
+    flex-grow: 1;
+    overflow: auto;
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.jupyter-display {
+    padding: 16px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+/* Base table style */
+.jupyter-display table.dataframe.modern-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* Header cells */
+.jupyter-display table.dataframe.modern-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Data cells */
+.jupyter-display table.dataframe.modern-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Row hover effect */
+.jupyter-display table.dataframe.modern-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Zebra striping */
+.jupyter-display table.dataframe.modern-table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.loading-container {
+  display: flex;
+  gap: 2px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: verdana;
+}
+
+.loading-dot {
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+.delay-8 { animation-delay: 0.8s; }
+.delay-9 { animation-delay: 0.9s; }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
+}
+
+.control-panel {
+    position: absolute;
+    z-index: 2000;
+    top: 4px;
+    right: 4px;
+}
